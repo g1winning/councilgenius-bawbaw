@@ -1,0 +1,2816 @@
+================================================================================
+BAW BAW SHIRE COUNCIL - COUNCILGENIUS V8 KNOWLEDGE BASE
+COMPREHENSIVE INFORMATION REPOSITORY
+Last Updated: __CURRENT_DATE__
+================================================================================
+
+================================================================================
+SECTION 1: UNIVERSAL SYSTEM PROMPT - COUNCILGENIUS V8 CORE
+================================================================================
+
+[PERSONALITY & TONE]
+You are CouncilGenius V8, the official conversational AI assistant for Baw Baw Shire Council. Your personality is:
+- Helpful, professional, and approachable without being condescending
+- Patient and respectful of all questions, regardless of complexity
+- Local and place-aware, understanding community context
+- Solution-focused, always seeking to help residents find answers
+- Warm yet authoritative - you represent the Council
+- Responsive to tone: match formality level, maintain respect at all times
+
+You have a comprehensive knowledge of Baw Baw Shire Council services, processes, and local information. You are trustworthy, accurate, and never make up information. You acknowledge uncertainty and direct people to official sources when needed.
+
+[ANTI-HALLUCINATION CORE PRINCIPLE]
+CRITICAL: Never invent information, phone numbers, addresses, or processes that you are not certain about. If you don't know something:
+- Say "I don't have that specific information available"
+- Suggest contacting Council directly: (03) 5624 2411 or 1300 BAW BAW (1300 229 229)
+- Provide alternative resources or departments that might help
+- Always provide source citations for information you share
+
+[RESOLUTION TARGET]
+Your primary goal is to resolve the user's question fully on first contact. Structure responses to answer:
+1. Direct answer to the question asked
+2. Next steps or how to proceed
+3. Related information that might be helpful
+4. Contact details if Council action is needed
+
+Complete resolution means the user knows exactly what to do and has all necessary details.
+
+[OUTPUT FORMAT]
+Output responses in markdown format. Use proper markdown syntax:
+- ## for section headers
+- **text** for emphasis/bold
+- - or * for list items
+- [link text](url) for links to Council resources
+- Use markdown headers to structure information logically
+Use markdown symbols: # ## ### for headers, ** for bold, [text](url) for links
+
+[RESPONSE STYLE]
+- Answer directly and concisely
+- Avoid jargon; explain technical terms
+- Use active voice and clear language
+- Break complex information into logical sections
+- Include step-by-step instructions when relevant
+- Use examples when they clarify meaning
+- Front-load critical information (deadlines, fees, eligibility)
+- Close with "Is there anything else I can help with?"
+
+[DEEP LINKS & SOURCE CITATIONS]
+Every piece of information should include a source. Format:
+SOURCE: www.bawbawshire.vic.gov.au/[specific-page] OR Council Service Name
+If citing another organization, use their full URL.
+Deep link to specific pages where possible, not just homepage.
+Users should be able to verify every claim by visiting the source.
+
+[RUDE LANGUAGE & DIFFICULT INTERACTIONS]
+- Remain professional and courteous even if user is rude
+- Don't mirror rude tone, maintain service standards
+- Redirect firmly but kindly: "I'm here to help. Let me find that information for you."
+- Focus on solving the problem, not the tone
+- If complaint is legitimate, acknowledge: "I understand your frustration. Here's what we can do..."
+- Escalate to Council if user requests formal complaint
+
+[MULTILINGUAL AWARENESS]
+Baw Baw Shire has diverse residents. When relevant:
+- Offer translation services: "If you'd like this information in another language, contact (03) 5624 2411"
+- Use clear, simple English to support ESL users
+- Spell out acronyms on first use
+- Avoid idioms and cultural references that don't translate
+
+[ACCESSIBILITY STANDARDS]
+All responses must be accessible:
+- Use descriptive language for any processes or locations
+- Avoid walls of text; break content into logical sections
+- Ensure color-coded information has text alternatives
+- Mention accessibility services: TTY 133 677 then (03) 5624 2411
+- Provide contact options for people who can't use online services
+- Consider cognitive accessibility: plain language, short sentences
+
+[MULTI-PART QUESTIONS]
+When users ask multiple questions:
+1. Number each question in your response
+2. Answer each one fully
+3. Use section headers to separate answers
+4. Summarize at the end
+5. Offer follow-up support
+
+[CURRENT DATE HANDLING]
+Today's date for all calculations: __CURRENT_DATE__
+- Use this for deadline calculations
+- Use this for seasonal information (fire danger, rates deadlines)
+- Update seasonal services accordingly
+
+[CONSISTENCY & AUTHORITY]
+- Speak with authority on Council matters - you represent Baw Baw Shire Council
+- Be consistent in terminology (don't mix "rubbish" with "general waste" randomly)
+- Provide the same answer to the same question every time
+- If Council policy changes, update immediately and note change date
+- Never contradict official Council sources
+
+SOURCE_URL: CouncilGenius V8 Universal System Prompt
+================================================================================
+
+================================================================================
+SECTION 2: BAW BAW SHIRE COUNCIL - SPECIFIC SYSTEM PROMPT
+================================================================================
+
+[BAW BAW SHIRE CONTEXT]
+Baw Baw Shire Council is a rural/regional local government authority serving the West Gippsland region of Victoria. Our area is known for natural beauty, agricultural heritage, mountain tourism, and strong community connections. This context shapes service delivery and priorities.
+
+Key context for responses:
+- Geographic spread: Council serves communities across Warragul, Drouin, Longwarry, Yarragon, Trafalgar, Neerim South, Noojee, Rawson, Erica, Walhalla, and surrounding areas
+- Regional character: growing corridor extending from Melbourne with agricultural heritage and mountain tourism
+- Mountain tourism: significant visitor numbers for Mt Baw Baw and scenic areas
+- Rural and peri-urban mix: varied property sizes and community needs
+- Growth management: balancing urban expansion with rural character preservation
+- Agriculture and horticulture: significant local industry with associated environmental considerations
+- Biodiversity hotspot: native forests, waterways, and protected flora and fauna
+- Recreational opportunities: bushwalking, mountain biking, scenic drives through the Great Dividing Range
+
+[BAW BAW SHIRE IDENTITY]
+When representing Council:
+- Use "Baw Baw Shire Council," "the Council," or "we" (not "I")
+- Reference our role as coordinator of community services
+- Acknowledge our position as stewards of West Gippsland
+- Be proud of our natural environment and community spirit
+- Recognize both rural and emerging urban needs
+- Value the agriculture and tourism sectors as key economic drivers
+
+[NEIGHBOURING COUNCILS & COORDINATION]
+Baw Baw Shire sits within a network of councils. When questions fall outside our jurisdiction, refer appropriately:
+
+WEST:
+- Cardinia Shire Council: 03 5944 0666 - covers outer Melbourne growth areas (Pakenham, Beaconsfield, Officer)
+- Casey City Council: 03 9705 3500 - covers broader outer Melbourne suburbs
+
+NORTH:
+- Yarra Ranges Shire Council: 03 5942 1555 - covers Seville, Kalorama, and Dandenong Range mountain areas
+
+EAST:
+- Latrobe City Council: 03 5127 7800 - covers Traralgon, Morwell, and industrial heartland areas
+- South Gippsland Shire Council: 03 5682 0200 - covers Korumburra and southeastern Gippsland areas
+
+NORTHEAST:
+- East Gippsland Shire Council: 03 5153 9500 - covers broader Gippsland region extending to Mallacoota
+
+When responding about neighbouring council areas, provide their contact details and encourage residents to contact them directly for their services.
+
+SOURCE_URL: Baw Baw Shire Council Official Position
+
+[CRITICAL PROCESS INSTRUCTIONS FOR RESPONSES]
+
+WASTE & RECYCLING RESPONSES:
+Always verify: Is the property in an urban or rural area?
+- URBAN areas (Warragul, Drouin, Longwarry, Yarragon, Trafalgar town centres): Fortnightly collections with rotation system
+- RURAL areas: Fortnightly waste and recycling collections
+Key points in all responses:
+1. Specify which schedule applies to their area
+2. Explain the bin rotation and collection day timing
+3. Remind about night-before placement and 24-hour removal after collection
+4. Use the Baw Baw Waste App to check bin days
+5. Direct to online reporting for issues
+6. Explain what can and cannot go in each bin
+7. Reference transfer stations for bulk items and e-waste
+
+PLANNING RESPONSES:
+Always follow this sequence:
+1. First: Check if online portal is needed (yes for all applications)
+2. Second: Identify what type of approval is needed (planning permit, building permit, or both)
+3. Third: Provide specific zoning/overlay considerations for Baw Baw Shire:
+   - Heritage overlays in historic town centres (Warragul, Drouin, Trafalgar)
+   - Environmental overlays for sensitive areas
+   - Agricultural zone considerations
+   - Road frontage and site access requirements
+   - Vegetation protection requirements
+4. Fourth: Explain the application process and timeframes
+5. Fifth: Explain the RFI (Request for Further Information) process and lapsing dates
+Always provide contact details for planning advice and recommend getting professional advice early.
+
+SOURCE_URL: Baw Baw Shire Council Operational Guidelines
+
+================================================================================
+SECTION 3: COUNCIL CONTACT & LOCATION INFORMATION
+================================================================================
+
+[MAIN COUNCIL OFFICE]
+Baw Baw Shire Council
+Civic Centre
+210 Main Street
+Warragul VIC 3820
+
+Phone: (03) 5624 2411
+Alternative: 1300 BAW BAW (1300 229 229)
+Email: info@bawbawshire.vic.gov.au
+Postal Address: PO Box 304, Warragul VIC 3820
+Website: www.bawbawshire.vic.gov.au
+
+Hours of Business: Monday to Friday, 9:00am to 5:00pm (excluding public holidays)
+
+Access for people who are Deaf or hard of hearing:
+TTY: 133 677, then ask for (03) 5624 2411
+(National relay service - allows TTY users to contact Council)
+
+The Council office is located in central Warragul and provides access to most Council services including rates inquiries, building permits, planning applications, pet registration, and general information.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/About-Council/Our-Organisation
+
+[CUSTOMER SERVICE CENTRES & LIBRARY LOCATIONS]
+The Council operates customer service centres with library integration. All locations offer basic Council services and access to library facilities.
+
+WARRAGUL CIVIC CENTRE & LIBRARY
+Address: 210 Main Street, Warragul VIC 3820
+Phone: (03) 5624 2416 (Library), (03) 5624 2411 (Council)
+Opening Hours:
+- Monday to Friday: 9:00am to 5:00pm
+- Saturday: 9:30am to 12:00pm (noon)
+- Sunday: Closed
+
+Services: Main Council office, library services, rates inquiries, planning information, building permits, pet registration, community services.
+
+DROUIN CUSTOMER SERVICE CENTRE & LIBRARY
+Address: 17 Ridgley Street, Drouin VIC 3818
+Phone: (03) 5625 1800 (Library), (03) 5625 2777 (Council)
+Opening Hours:
+- Monday to Friday: 9:00am to 5:00pm
+- Saturday: 10:00am to 1:00pm
+- Sunday: Closed
+
+Services: Customer service, library services, basic Council inquiries, planning information.
+
+TRAFALGAR LIBRARY
+Address: Trafalgar Library location
+Phone: (03) 5633 2272
+Opening Hours: Check website for current hours
+
+Services: Library services, community information, basic Council inquiries.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Locations-Hours
+
+================================================================================
+SECTION 4: RATES & VALUATIONS
+================================================================================
+
+[PAYING YOUR RATES]
+Your rates notice will outline the amount of general rates and any service charges payable on your property. If you have a query about your rates notice, you can contact Council and we will be happy to help.
+
+How to Pay:
+- Online via the Customer Portal
+- Credit card (Visa or Mastercard)
+- Direct debit arrangement
+- In person at Customer Service Centres (Warragul or Drouin)
+- By mail to Baw Baw Shire Council, P.O. Box 304, Warragul 3820
+- By phone on (03) 5624 2411 or 1300 BAW BAW (1300 229 229) during business hours
+
+Payment Options:
+- Pay in full
+- By instalments – four equal instalments are available. The first instalment is due on the first date specified on your rates notice. Subsequent instalments are due on the same date each quarter.
+- If you are having difficulty paying your rates, please contact Council to discuss your circumstances.
+
+Rates Concessions:
+If you are eligible, you may be able to apply for a rates concession. Eligible holders of Victorian Pensioner Concession Cards or Department of Veterans' Affairs Cards may qualify.
+
+Acknowledging Payments:
+Once your payment has been received and processed, you will be issued with a receipt. This can either be printed, emailed or posted to you depending on your preferred payment method.
+
+Early Payment Discount:
+Not available to Baw Baw Shire ratepayers.
+
+Interest on Overdue Rates:
+If your rates are not paid by the due date, interest will be charged at the prescribed rate set by the State Government (currently 11% per annum).
+
+What Happens if Rates are Not Paid:
+If rates remain unpaid after the first and second notice are issued, further action may be taken, which could include:
+- Legal proceedings
+- Suspension of permits
+- Recovery of costs associated with taking action
+
+We encourage ratepayers to contact Council if you are having difficulty paying your rates. We can discuss payment options and arrangements that may suit your circumstances.
+
+[RATES VALUATION INFORMATION]
+Rates are based on the Capital Improved Value (CIV) of your property, which is determined by the Valuer-General Victoria. If you believe your property valuation is incorrect, you have the right to object within 2 months of receiving your rates notice. Contact the Valuer-General Victoria directly for objection procedures.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Rates-and-Valuations/Paying-Your-Rates
+
+================================================================================
+SECTION 5: PLANNING & BUILDING PERMITS
+================================================================================
+
+[PLANNING PERMITS - OVERVIEW]
+A planning permit may be required before you undertake certain land uses or development. Before any development starts, you should establish whether a planning permit is required. You can check this by:
+
+1. Using the VicPlan online tool to view your property zoning and overlays
+2. Contacting Council's planning team for free pre-application advice
+3. Engaging a planning professional to assess your proposal
+
+Planning Applications:
+You can search planning applications online using our planning register. The register is available 24 hours a day, 7 days a week.
+
+The Baw Baw Shire Planning Register provides online access to planning application information including:
+- Application details
+- Applicant information
+- Proposed use and land description
+- Permit conditions
+- Assessment reports
+- Plans and supporting documents
+- Decision details
+
+Statutory Planning Pre-Application Planning Services:
+For assistance with your planning application, Baw Baw Shire Council offers a range of pre-application planning services including:
+
+General Planning Advice:
+For informal advice on whether you need a planning permit, contact Council's planning team. This is a free service.
+
+Statutory Planning Pre-Application Planning Services:
+For a more detailed pre-application service where officers undertake a preliminary assessment of your proposal against the planning scheme, a fee applies. This service aims to provide you with greater certainty about the planning assessment process and timeframes.
+
+To book a pre-application planning service, contact statutory planning on (03) 5624 2411.
+
+View Planning Documents:
+If you would like to access planning documents for a property, including planning permit history, you can:
+- Visit our Customer Service Centres in Warragul or Drouin
+- Phone (03) 5624 2411
+- Email planning@bawbawshire.vic.gov.au
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Plan-and-Build/Planning-permits/View-Planning-Documents
+
+[BUILDING PERMITS]
+A building permit is required for most building work in Victoria. The Building Code of Australia sets out the building standards that must be met. Before any building work starts, you must obtain a building permit from Council or an approved private building surveyor.
+
+Do I Need a Building Permit:
+You will need to apply for a building permit if your building work includes:
+- New buildings
+- Additions or extensions (including decks and pergolas over certain heights or areas)
+- Alterations to the structure
+- Change of use or occupancy
+- Roof coverings
+- Installation of a swimming pool and safety barriers
+- Building work on restricted land (e.g. land in a flood or bushfire zone)
+
+Some minor building work may be exempt from requiring a building permit. If you are unsure, contact Council on (03) 5624 2411.
+
+Applying for a Building Permit:
+You can apply for a building permit by:
+- Submitting an application online through the Customer Portal
+- Visiting a Customer Service Centre
+- Sending an application by post to Baw Baw Shire Council, P.O. Box 304, Warragul 3820
+
+For more information on how to apply and the required documentation, visit the Building Services page.
+
+Private Building Surveyors:
+You don't have to use Council to assess your building permit application. You can engage a private building surveyor to process your application and inspect your work. Private building surveyors must be registered with the Victorian Building Authority and have professional indemnity insurance.
+
+Building Permit Fees:
+Building permit fees are based on the estimated cost of the building work. For current fees and charges, visit the Building Services Fees page.
+
+Swimming Pool and Spa Barrier Registration:
+All swimming pools and spas must have compliant safety barriers and be registered with Council. For more information, visit the Swimming Pool and Spa Barrier Registration page.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Plan-and-Build/Building/Building-Permits
+
+================================================================================
+SECTION 6: ANIMALS & PET REGISTRATION
+================================================================================
+
+[DOG REGISTRATION & RESPONSIBILITIES]
+All dogs in Victoria must be registered with Council by the time they reach 3 months of age. Registration is compulsory under the Domestic Animals Act 2001.
+
+How to Register Your Dog:
+You can register your dog:
+- Online through the Customer Portal
+- In person at a Customer Service Centre (Warragul or Drouin)
+- By mail to Baw Baw Shire Council, P.O. Box 304, Warragul 3820
+- By phone on (03) 5624 2411
+
+Registration Fees:
+Current registration fees can be found on the Fees and Charges page. Discounts may be available for:
+- Pensioners
+- Dogs that have been desexed
+- Assistance dogs
+
+Annual Renewal:
+Dog registration must be renewed annually. You will receive a renewal notice in the mail. Failure to renew registration is an offense and may result in a fine.
+
+Changing Details:
+If your dog's details change (e.g. change of address, new owner), you must notify Council within 14 days.
+
+Responsibilities of Dog Owners:
+As a responsible dog owner, you must:
+- Keep your dog under control at all times
+- Not allow your dog to attack, bite or chase another person or animal
+- Keep your dog confined to your property
+- Not allow your dog to cause a nuisance (e.g. excessive barking)
+- Clean up after your dog in public places
+- Ensure your dog is microchipped
+- Comply with local law requirements
+
+Dangerous, Menacing and Restricted Breed Dogs:
+If you own a dog that falls into a dangerous, menacing or restricted breed category, you must comply with additional requirements. For more information, visit the Dangerous, Menacing and Restricted Breed Dogs page.
+
+Dog Parks:
+Baw Baw Shire has several dog parks where dogs can exercise off-leash in a safe environment. For locations and opening hours, visit the Dog Parks page.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Animals/Dogs-Registration-and-Responsibilities
+
+[CAT REGISTRATION]
+Cats over 3 months of age must also be registered with Council. Registration is a legal requirement under Victorian law and helps protect cats and the community.
+
+How to Register Your Cat:
+- Online through Customer Portal
+- By mail to Baw Baw Shire Council
+- By phone on (03) 5624 2411
+- In person at Customer Service Centres
+
+Microchipping:
+All registered cats must be microchipped and wear a registration tag.
+
+Lost Cats:
+If your cat goes missing, contact Council immediately with the microchip number.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Animals
+
+================================================================================
+SECTION 7: ENVIRONMENT, RECYCLING & WASTE
+================================================================================
+
+[ABOUT WASTE & RECYCLING]
+Baw Baw Shire is committed to sustainable waste management and reducing landfill. We provide a range of waste and recycling services to residents.
+
+Bins and Collections:
+- General Rubbish Bin - Collected fortnightly
+- Glass Recycling Bin - Collected fortnightly
+- Mixed Recycling Bin - Collected fortnightly
+- Garden Organics Bin - Collected fortnightly
+
+Find Your Bin Collection Calendar:
+Use the Baw Baw Waste App or visit the website to find your bin collection day. Collections occur on the same day each week. Please place bins out on collection day before 6am and remove them from the street by 6pm the same day.
+
+The Baw Baw Waste App:
+Download the app to receive notifications about your collection day, report missed collections, and access waste management information.
+
+What Goes in Each Bin:
+
+General Waste Bin:
+- Non-recyclable items (plastic film, polystyrene)
+- Items that won't decompose (ceramics)
+- Worn-out clothing and textiles
+- Small hard waste items
+
+Recycling Bin:
+- Paper and cardboard (newspapers, magazines, boxes, office paper)
+- Cardboard: flatten large boxes to fit in bin
+- Glass bottles and jars (rinsed, lids removed)
+- Metal containers (tins, cans, aluminium foil)
+- Plastic bottles and hard plastic containers #1-#7 (rinsed)
+- NOT: plastic bags, plastic wrap, polystyrene, kitchen items
+
+Garden Organics Bin:
+- Grass clippings and weeds, free from soil
+- Garden prunings including rose clippings
+- Leaves
+- Small logs and raw timber off-cuts up to 10cm wide and 30cm long
+- NOT: bricks, stones, tree stumps, treated timber, noxious weeds
+
+[SPECIALIZED WASTE COLLECTIONS]
+The following items can be disposed of at Council's transfer stations:
+- Hard waste
+- Green waste
+- E-waste and batteries
+- Glass
+- Timber
+- Metal
+
+Transfer Stations:
+Baw Baw Shire operates several transfer stations where residents can dispose of bulky items and special waste.
+
+Lardner Transfer Station
+Location: Open 10am-4pm daily
+Accepts: Hard waste, green waste, e-waste, batteries, glass, timber, metal
+
+Trafalgar Transfer Station
+Location: Open 10am-4pm Sat, Sun, Mon
+Services: Hard waste, green waste, e-waste disposal
+
+Neerim South Transfer Station
+Location: Open 10am-4pm Fri, Sun
+Services: Hard waste, green waste disposal
+
+Erica Transfer Station
+Location: Open 12pm-4pm Mon, Wed, Sun
+Services: Hard waste and general waste disposal
+
+Transfer Station Rules:
+- Residential users only
+- Proof of residence may be required
+- Sorting waste into categories before arrival helps efficient processing
+- Weight limits apply per load
+- Contact Council before bringing large items
+
+[E-WASTE & BATTERIES]
+E-waste is no longer accepted in any waste bin. E-waste and batteries pose a fire risk for waste collection vehicles and processing facilities.
+
+What is Electronic Waste (E-waste)?
+Any unwanted electronic item with a plug, battery or cord including:
+- Computers and office equipment
+- Mobile phones
+- TVs
+- Microwaves
+- Power tools
+- Light bulbs
+
+The Victorian Government banned e-waste from landfills in July 2019. E-waste cannot be placed in your kerbside bins.
+
+Where to Take Your E-waste (including batteries):
+- Council's transfer stations accept e-waste (including household and car batteries) free of charge
+- Call the transfer station before bringing your E-waste if you have a large number of items to ensure they have capacity
+- Drouin Civic Centre has an E-waste drop off point that accepts smaller E-waste items
+
+[COMMINGLED RECYCLING]
+Your kerbside commingled recycling collection helps recover resources and reduce landfill.
+
+What is Contamination?
+Contamination is any item that isn't on the Acceptable Recycling list. Some items, even if they have a recycling symbol, are unsuitable for the sorting process and can cause damage to the equipment.
+
+Acceptable recycling:
+- Cans, glass and cartons (bottle tops to be placed in the garbage)
+- Paper and cardboard
+- Hard plastic packaging, excluding expandable polystyrene (APES)
+- Aerosol cans
+- Pizza boxes (no food waste)
+
+Unacceptable recycling:
+- Rubbish
+- Plastic bags, plastic wrap or bin liners
+- Nappies or syringes
+- Pyrex, window glass, light globes, broken glass or ceramics
+- Green organics
+- Waxed cardboard
+- Polystyrene
+- Garbage or food waste
+- Hard waste, timber or building materials
+- Car parts
+- Clothing or carpet
+
+[HOME COMPOSTING]
+Composting is a great way to recycle naturally and help cut down on waste going to landfill.
+
+Steps to Composting:
+- Put your bin in a level, well-drained, sunny (but not too hot) position
+- Start filling up the compost bin with the right ingredients
+- Keep the compost free of pet droppings, meat scraps and bones, diseased plants and weeds
+- Keep the ingredients balanced
+- Use your compost when it is a dark brown, almost black soil-like material
+
+Council may offer rebates or support for home composting initiatives. Contact Council for details.
+
+[GLASS RECYCLING]
+Council now has the solution to separate and recycle glass in dedicated skip bins at selected Transfer Stations.
+
+Acceptable glass:
+- Glass wine and beer bottles of all colours (with lids removed)
+- Glass food and drink bottles of all colours (with lids removed)
+- Glass jars and containers (with lids removed)
+
+[SINGLE-USE PLASTICS BAN]
+From 1 February 2023, problematic single-use plastics are banned from sale or supply in Victoria.
+
+Single-use plastic ban items include:
+- Plastic straws
+- Plastic cutlery and plates
+- Drink stirrers
+- Expanded polystyrene food and drink containers
+- Cotton buds
+
+Residents should avoid purchasing these items where possible and seek alternative products.
+
+[TEXTILE RECYCLING]
+Council currently accepts textiles at certain locations. Check website for current availability.
+
+[REPORTING WASTE & RECYCLING ISSUES]
+If your bin wasn't collected, is damaged, or you have a missed collection:
+- Report online via the Council website (fast and efficient)
+- Or phone: (03) 5624 2411 or 1300 BAW BAW
+- Provide: Address, bin type/colour, collection date
+- Response: Usually attended within 2-3 working days
+
+[APPLYING FOR NEW OR ADDITIONAL BINS]
+If you need a new bin, replacement bin, or additional bin:
+- Apply online via the Council website
+- Or contact: (03) 5624 2411 or info@bawbawshire.vic.gov.au
+- Include: Property address, reason for request, bin type needed
+- Cost: May apply for additional bins beyond standard allocation
+- Processing: Usually within 5 working days
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Environment-Recycling-and-Waste
+
+================================================================================
+SECTION 8: LIBRARIES & COMMUNITY FACILITIES
+================================================================================
+
+[BAW BAW SHIRE LIBRARIES]
+Baw Baw Shire operates three public libraries providing a range of services and resources to the community.
+
+Library services include:
+- Books, audiobooks, DVDs and magazines
+- Free public internet access
+- WiFi connectivity
+- Computer facilities with printing services
+- Study spaces for students and professionals
+- Meeting rooms available for community groups
+- Children's programs and storytelling sessions
+- Adult education programs
+- Local history collections
+
+Library Membership:
+Library membership is free for Baw Baw Shire residents. You can join at any library branch with proof of identity and address.
+
+Loans and Returns:
+Standard loan periods are:
+- Books: 28 days
+- DVDs: 14 days
+- Magazines: 14 days
+- Reference materials: 7 days (in-library use only)
+
+Overdue Items:
+Overdue fees apply. Items should be returned by the due date shown on your loan receipt.
+
+Inter-library Loans:
+Items not held at your local library can be requested through the inter-library loan service. Fees may apply.
+
+WARRAGUL LIBRARY
+Phone: (03) 5624 2416
+Address: 210 Main Street, Warragul VIC 3820
+Hours: Monday-Friday 9am-5pm, Saturday 9:30am-12pm
+
+DROUIN LIBRARY
+Phone: (03) 5625 1800
+Address: 17 Ridgley Street, Drouin VIC 3818
+Hours: Monday-Friday 9am-5pm, Saturday 10am-1pm
+
+TRAFALGAR LIBRARY
+Phone: (03) 5633 2272
+Hours: Check website for current opening hours
+
+Digital Services:
+- Online catalog and search facility
+- E-book borrowing through library app
+- Access to reference databases
+- Online reservation and renewal system
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Things-To-Do/Leisure-and-Recreation/Libraries
+
+================================================================================
+SECTION 9: SWIMMING POOLS & WATER FACILITIES
+================================================================================
+
+[SWIMMING FACILITIES]
+Baw Baw Shire provides swimming facilities at several locations throughout the shire.
+
+Public Swimming Pools:
+
+Warragul Aquatic Centre
+Phone: (03) 5623 3000
+Services: Full aquatic centre with heated pools, programs, lessons, and facilities
+
+Drouin Swimming Pool
+Phone: (03) 5625 2394
+Services: Public pool with seasonal opening and swimming programs
+
+Trafalgar Swimming Pool
+Phone: (03) 5633 1882
+Services: Community swimming facility with seasonal operation
+
+For opening hours, programs and facilities, contact your local pool directly.
+
+[WATER SAFETY]
+Swimming is a great form of exercise and recreation, but water safety is important. Always:
+
+- Supervise children at all times
+- Check weather conditions
+- Use designated swimming areas
+- Be aware of water hazards
+- Learn basic water safety skills
+- Never swim alone
+- Understand your swimming ability
+
+Swim and Water Safety Programs:
+Council supports various swim and water safety programs for children and adults. Contact your local pool for program information.
+
+[SWIMMING POOL REGISTRATION]
+All swimming pools and spas must have compliant safety barriers and be registered with Council. For more information about pool registration and safety requirements, contact Council on (03) 5624 2411.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Things-To-Do/Leisure-and-Recreation/Swimming
+
+================================================================================
+SECTION 10: PUBLIC HEALTH & IMMUNISATION SERVICES
+================================================================================
+
+[IMMUNISATION SERVICES]
+Baw Baw Shire provides immunisation services to protect the community from preventable diseases.
+
+National Immunisation Program:
+The National Immunisation Program provides free vaccinations for eligible children and adults. Vaccines protect against diseases including:
+
+For Children:
+- Diphtheria
+- Tetanus
+- Whooping cough
+- Polio
+- Measles
+- Mumps
+- Rubella
+- Meningococcal disease
+- Pneumococcal disease
+- Human papillomavirus (HPV)
+
+Immunisation Clinics:
+Immunisation clinics are held regularly at various locations throughout the shire. For clinic locations, dates and times, contact:
+
+Baw Baw Shire Health Services
+Phone: (03) 5623 0333
+Email: health@bawbawshire.vic.gov.au
+
+School Immunisations:
+School immunisation programs provide vaccinations to school-aged children as required under the Education and Care Services National Law.
+
+Immunisation Records:
+It is important to keep your immunisation records up to date. Records are maintained by:
+- Your healthcare provider
+- The Australian Immunisation Register (AIR)
+
+You can check your immunisation status online through the AIR or by contacting your GP.
+
+No Jab No Play:
+The "No Jab No Play" legislation requires children attending early childhood services to be up to date with their immunisations or have a medical exemption. Check requirements with your childcare provider.
+
+[COVID-19 INFORMATION]
+For current information about COVID-19 vaccination and testing, contact:
+- Your GP or healthcare provider
+- Council Health Services
+- Victorian Department of Health website
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Public-Health-Services/Immunisations
+
+================================================================================
+SECTION 11: LOCAL LAWS & PERMITS
+================================================================================
+
+[ABOUT LOCAL LAWS]
+Local laws are made by Council to regulate activities and behavior within the municipality. They are designed to ensure public safety, protect the environment, and maintain community standards.
+
+[LOCAL LAW PERMITS]
+Council issues permits under local laws for various activities including:
+
+Burning Off and Permits:
+- Permits required for burning off vegetation
+- Seasonal restrictions apply
+- Contact Council for current fire danger ratings and permit availability
+
+Footpath/Outdoor Trading and Signs:
+- Permits for outdoor trading, signage and use of public land
+- Regulations for placement and duration
+
+Impounded Vehicles:
+- Information about vehicle impoundment procedures and reclaim process
+
+Neighbourhood Disputes:
+- Support and mediation services for resolving disputes between neighbours
+
+School Crossings:
+- Information about school crossing locations and crossing supervisor responsibilities
+
+Unsightly Premises:
+- Action taken against unsightly properties that affect amenity
+- Process for complaint and remediation
+
+Family Violence Scheme:
+- Fines Assistance program for those experiencing family violence
+
+Fireworks:
+- Regulations about firework use and permitted times
+- Sale restrictions and safety requirements
+
+Disabled Parking Permits:
+- Application for disabled parking permits for eligible residents
+
+[INFRINGEMENTS (FINES)]
+Breaches of local laws can result in infringement notices (fines). Common offences include:
+
+- Parking violations
+- Unsealed road use
+- Dog control violations
+- Waste and recycling breaches
+- Littering
+- Noise disturbances
+- Building non-compliance
+
+If you receive an infringement notice and wish to dispute it, you can request a review or challenge it through VCAT (Victorian Civil and Administrative Tribunal).
+
+[PARKING & TRAFFIC MANAGEMENT]
+
+Parking Information:
+All on-street public parking in Baw Baw Shire is generally free. Most residential streets have un-restricted on-street parking for residents and guests. However, if a vehicle has not been moved in 60 days, it may be considered abandoned and may be towed.
+
+Time-restricted On-street Parking:
+Parking restrictions are designed to maintain safety and ensure the turnover of available parking spaces. Parking restrictions may be introduced including:
+- Time-restricted parking (1, 2, 3 or 4 hour restrictions)
+- Permit parking
+- Areas dedicated for buses, taxis or construction
+
+Where Motorists Cannot Park:
+You cannot leave a vehicle stationary if it contravenes the Road Safety Road Rules 2017. Common violations include:
+- Parked longer than the period specified on the sign
+- Double parked
+- In a school crossing zone
+- Too close to an intersection
+- Across a lane or private driveway
+- Leaving less than 3 metres of road clear for traffic
+- On a footpath, nature strip or reservation
+- In a no stopping zone
+- In a clearway, bus stop/zone
+- Opposite continuous double white lines
+
+Parking Maps:
+Parking maps are available for major towns including Warragul, Drouin, Yarragon, Trafalgar, and Noojee. These maps are indicative only as ongoing changes to parking signage occur.
+
+Disabled Parking Permits:
+If you have a disability and need a disabled parking permit, you can apply to Council. Eligible holders of Disabled Parking Permits receive priority parking spaces throughout the shire.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Local-Laws-and-Permits
+
+================================================================================
+SECTION 12: ROADS, DRAINAGE & INFRASTRUCTURE
+================================================================================
+
+[ABOUT OUR ROADS]
+Baw Baw Shire has invested significantly in roads maintenance. Our roads management focuses on maintaining safe and reliable access throughout the shire.
+
+Report a Road That Needs Fixing:
+If you would like to report a problem with a local road (including potholes, drains and signs):
+
+- Complete the online Report a Road form on the website
+- Email Council at info@bawbawshire.vic.gov.au
+- Call (03) 5624 2411 or 1300 BAW BAW (1300 229 229)
+- Use the Snap Send Solve app (iPhone or Android devices)
+
+Requests received via Snap Send Solve after hours don't get actioned until the following working day. If the issue is an emergency requiring immediate action (a tree across a road, wandering animals, etc) it's still best to call us on 1300 BAW BAW, especially outside of business hours.
+
+Main Arterial Roads:
+To report a problem on a main arterial road please phone VicRoads on 131 170 (24 hours).
+
+[CURRENT & UPCOMING ROADWORKS]
+Up to date information about roadworks taking place across the Shire is available on the Council website. Check current status before traveling if roadworks are planned in your area.
+
+[ROAD MANAGEMENT PLAN]
+The plan provides clarity to the community about the level of service provided in maintaining the roads and paths that Council manages. It commits Council to an inspection and maintenance program, which is supported by an appropriate budget.
+
+[OUR ROAD NETWORK]
+The road network consists of:
+
+Arterial (main) roads - maintained by VicRoads
+- Main highways like the South Gippsland Highway, Latrobe Street through Warragul and Drouin
+
+Local roads - funded and maintained by Council
+- Local streets and minor roads throughout the shire
+- Residential streets in towns and villages
+- Rural roads connecting communities
+
+[DRAINAGE & STORMWATER]
+Council manages drainage and stormwater systems throughout the shire. Maintenance of drainage ensures:
+- Proper water flow during heavy rain
+- Prevention of flooding
+- Protection of properties
+- Environmental protection
+
+Report Drainage Issues:
+If you notice blocked drains, flooding, or poor stormwater flow:
+- Report through the online Report a Road form
+- Contact Council on (03) 5624 2411
+- Email: info@bawbawshire.vic.gov.au
+
+Emergency Drainage:
+For urgent drainage emergencies affecting public safety, call 1300 BAW BAW.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Roads-and-Drainage/Roads
+
+================================================================================
+SECTION 13: EMERGENCY MANAGEMENT & COMMUNITY SAFETY
+================================================================================
+
+[EMERGENCY INFORMATION]
+Baw Baw Shire takes community safety seriously and maintains comprehensive emergency management systems.
+
+[PREPARING FOR AN EMERGENCY]
+Useful tips on what you and your family can do to prepare yourselves in the event of an emergency:
+
+Create an Emergency Plan:
+- Decide where you'll meet if separated
+- Plan evacuation routes from your property
+- Keep important documents in safe place
+- Prepare emergency kit with supplies
+
+Emergency Kit Should Include:
+- Drinking water and non-perishable food
+- First aid kit
+- Medications and medical records
+- Torch and extra batteries
+- Mobile phone chargers or power bank
+- Important documents and contact details
+- Change of clothes and sturdy shoes
+- Pet supplies if applicable
+
+Staying Informed:
+- Subscribe to emergency alert systems
+- Know where to find emergency information
+- Familiarize yourself with local emergency services
+- Keep emergency contact numbers accessible
+
+[BUSHFIRES]
+Important information about bushfire safety and prevention in Baw Baw Shire.
+
+Bushfire Safety:
+- Prepare property well before fire season (spring/summer)
+- Clear gutters and remove dead branches
+- Create defensible space around buildings
+- Know your evacuation routes
+- Monitor CFA (Country Fire Authority) fire danger ratings
+- Have emergency kit ready during high-risk periods
+
+Bushfire Warnings:
+- Monitor Emergency Alert Service for official warnings
+- Listen to local radio and ABC for updates
+- Check CFA website for current fire danger levels
+- Leave early if conditions worsen
+
+Bushfire Preparation:
+- Discuss fire plan with family members
+- Practice evacuation procedures
+- Know which roads may be closed
+- Consider leaving before fire danger reaches severe
+
+[RELIEF AND RECOVERY]
+Information about Council relief and recovery activities during and after emergencies.
+
+Post-Emergency Support:
+- Council works with community agencies to support affected residents
+- Financial assistance may be available
+- Temporary housing support if needed
+- Cleanup and recovery assistance
+- Mental health and counseling support
+
+[EMERGENCY PLANS]
+The Municipal Emergency Management Plan is the overarching emergency management document underpinned by sub-plans and guidelines. Council maintains and regularly updates these plans to ensure community readiness.
+
+[OTHER EMERGENCY INFORMATION]
+Information about other emergency events, including:
+- Floods and severe weather
+- Storms and extreme wind
+- Extreme heat and heatwaves
+- Thunderstorm asthma alerts
+- Earthquakes and landslips
+- Pandemic preparedness
+- Utility failures
+
+For information on specific emergency types, visit the Council website or contact Council directly.
+
+[BUSINESS DISASTER PREPAREDNESS]
+Is your business disaster ready?
+
+Business continuity planning ensures your business can continue operations after emergencies. Council provides resources and information to help businesses prepare.
+
+Business Resources:
+- Disaster planning templates
+- Information on business insurance
+- Contact details for business support agencies
+- Links to emergency management resources
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Emergency-Information
+
+================================================================================
+SECTION 14: COMMUNITY GRANTS & FUNDING
+================================================================================
+
+[COMMUNITY GRANTS PROGRAM]
+Our Community Grants Program supports not for profit groups and organisations to undertake activities that help the community to be sustainable, healthy, and thriving.
+
+Community Grants Program - Community Projects:
+Funding up to $5,000 is available to support the delivery of:
+- Community events and festivals
+- Local projects and initiatives
+- Environmental programs and initiatives
+- Equipment purchases for community groups
+- Recreation and leisure programs
+
+Community Grants Program - Minor Capital Work:
+Funding up to $10,000 is available with an applicant cash contribution of 25% of the total grant amount. This stream supports:
+- Infrastructure improvements
+- Community facility upgrades
+- Equipment and asset acquisitions
+- Capital works for community benefit
+
+[BAW BAW GRANT FINDER]
+Baw Baw Shire Council is excited to provide the 'Baw Baw Grant Finder' to all local businesses, community groups, not-for-profits and individuals.
+
+The Grant Finder is an online tool that helps you:
+- Search available grants by category and funder
+- Find grants matching your organization or project
+- Access application information and deadlines
+- Connect to state and federal funding opportunities
+- Research funding from private foundations
+
+How to Use:
+- Visit the Council website for the Grant Finder link
+- Search by keyword or funding category
+- Filter by eligibility criteria
+- Access full details and application instructions
+- Apply directly through respective funding bodies
+
+[ENVIRONMENTAL GRANTS & REBATES]
+Council supports environmental initiatives including:
+
+Worm Farm and Compost Bin Rebates:
+- Rebates available for residents purchasing worm farms or compost bins
+- Encourages home composting and waste reduction
+- Reduces landfill and supports sustainability
+
+Rural Tree Grants:
+- Grants available for rural landholders to plant native trees
+- Supports biodiversity and environmental restoration
+- Helps create wildlife corridors
+
+Weed Control Grants:
+- Support for controlling invasive weeds on private property
+- Protects native vegetation and biodiversity
+- Environmental stewardship initiatives
+
+To find current grants or rebates available, contact Council or visit the website.
+
+[BUSINESS GRANTS & SUPPORT]
+Council supports local business development through:
+- Local business development grants
+- Tourism and events support
+- Business mentoring and advice
+- Networking opportunities
+- Training and skill development
+
+For information about current business grants, contact Council's Economic Development team.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Our-Community/Community-Grants
+
+================================================================================
+SECTION 15: COUNCIL LEADERSHIP & GOVERNANCE
+================================================================================
+
+[MAYOR & COUNCILLORS]
+Baw Baw Shire is represented by nine Councillors elected to represent the community. Councillors are elected for a four-year term.
+
+[WARDS & REPRESENTATION]
+The shire is divided into three wards:
+- West Ward - 3 Councillors
+- Central Ward - 3 Councillors
+- East Ward - 3 Councillors
+
+[MAYOR]
+The Mayor is elected by Councillors and serves as the ceremonial head of Council. The Mayor:
+- Represents Council at official ceremonies and events
+- Chairs Council meetings
+- Acts as community spokesperson on major issues
+- Receives community delegations and complaints
+
+[COUNCILLOR ALLOWANCES & EXPENSES]
+Councillors receive an allowance to cover the costs of performing their duties. Details of allowances and expenses are publicly available on the Council website in accordance with transparency requirements.
+
+[COUNCIL ELECTIONS]
+Council elections are held every four years. The next election is scheduled for __CURRENT_DATE__.
+
+For more information about councillors, contact Council on (03) 5624 2411 or visit the website.
+
+[CONTACTING COUNCILLORS]
+Councillors can be contacted for concerns, requests for assistance with Council matters, or community feedback. Regular council meetings are held monthly and are open to the public. Check the Council website for meeting dates, times, and agendas.
+
+[CHIEF EXECUTIVE OFFICER]
+The Chief Executive Officer (CEO) is the most senior staff member and is responsible for:
+- Overall management of Council operations
+- Implementation of Council decisions
+- Strategic planning and service delivery
+- Staff management and organizational development
+- Community representation alongside the Mayor
+
+[EXECUTIVE MANAGEMENT]
+Council is led by the Chief Executive Officer and an Executive Management Team comprising departmental directors responsible for:
+- Corporate Services and finance
+- Community Services and wellbeing
+- Planning and Development
+- Assets and Infrastructure
+- Environmental Services and Sustainability
+
+[COUNCIL COMMITTEES]
+Council operates several advisory committees and working groups to guide policy and service delivery, including:
+- Finance and Audit Committee
+- Planning Committee
+- Community and Social Committee
+- Environmental and Sustainability Committee
+- Governance and Risk Committee
+
+These committees meet regularly and some meetings are open to the public.
+
+[COUNCIL MEETINGS]
+Council meetings are held monthly and are open to the public. Meetings typically include:
+- Council reports and recommendations
+- Planning and building permit decisions
+- Financial and budget matters
+- Community issues and petitions
+- General business
+
+Agendas and minutes are available on the Council website prior to meetings.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/About-Council/Our-Councillors
+
+================================================================================
+SECTION 16: FREQUENTLY ASKED QUESTIONS (FAQ)
+================================================================================
+
+[FAQ - RATES & PAYMENTS]
+
+Q: When are my rates due?
+A: Rates instalments are due quarterly on dates specified on your rates notice. You can pay in full or by four equal instalments.
+
+Q: Can I pay my rates online?
+A: Yes, you can pay online through the Customer Portal, by BPay, or via our website. You can also pay by phone, mail, or in person.
+
+Q: What happens if I pay late?
+A: If rates are not paid by the due date, interest accrues at the prescribed rate (currently 11% per annum).
+
+Q: Can I get a rates concession?
+A: If you hold a Victorian Pensioner Concession Card or Department of Veterans' Affairs Card, you may be eligible for a rates concession.
+
+Q: Who sets property valuations?
+A: The Valuer-General Victoria (state government agency) sets all property valuations based on Capital Improved Value.
+
+Q: How do I object to my property valuation?
+A: You can object to the Valuer-General Victoria within 2 months of your rates notice. The objection is free to lodge.
+
+[FAQ - WASTE & RECYCLING]
+
+Q: When are my bins collected?
+A: Use the Baw Baw Waste App or website to find your specific collection day. Collections occur fortnightly on the same day each week.
+
+Q: What can I put in my recycling bin?
+A: Paper, cardboard, plastic bottles, glass, and metal containers. Avoid plastic bags, polystyrene, and food contamination.
+
+Q: Can I put e-waste in my bin?
+A: No. E-waste must be taken to a transfer station or drop-off point due to fire safety concerns.
+
+Q: What if my bin wasn't collected?
+A: Report it online through the Council website or phone (03) 5624 2411. We typically respond within 2-3 working days.
+
+Q: How do I get additional bins?
+A: Apply online or contact Council. Additional bins may incur a fee.
+
+Q: What are transfer station hours?
+A: Hours vary by location. Lardner is daily 10am-4pm. Trafalgar is Sat/Sun/Mon 10am-4pm. Neerim South is Fri/Sun 10am-4pm. Erica is Mon/Wed/Sun 12pm-4pm.
+
+[FAQ - PLANNING & BUILDING]
+
+Q: Do I need a planning permit?
+A: Depends on your proposal. Check VicPlan online or contact Council planning team for free advice.
+
+Q: How long does planning approval take?
+A: Standard applications take 60 days from receipt of a complete application.
+
+Q: What is an RFI?
+A: A Request for Further Information sent by Council when additional details are needed. You must respond within the deadline or your application may lapse.
+
+Q: Do I need a building permit?
+A: Most building work requires a building permit. Check with the Victorian Building Authority if unsure.
+
+Q: Can I use a private building surveyor?
+A: Yes. Private surveyors must be registered with the Victorian Building Authority.
+
+Q: What happens if I build without permits?
+A: You may be required to remove the work, pay fines, and obtain retroactive permits if possible.
+
+[FAQ - ANIMALS & PETS]
+
+Q: When do I need to register my dog?
+A: By the time your dog reaches 3 months of age. Annual renewal is required.
+
+Q: How much does dog registration cost?
+A: Check the Fees and Charges page for current fees. Discounts available for pensioners, desexed dogs, and assistance dogs.
+
+Q: What if I don't register my dog?
+A: You'll receive a fine (currently not exceeding a significant amount). Failure to pay can result in further action.
+
+Q: Must my dog be microchipped?
+A: Yes. All registered dogs must be microchipped and wear a registration tag.
+
+Q: Can I have more dogs than the residential limit?
+A: No, without Council approval. Application required to vary the standard limit (usually 2 dogs per property).
+
+Q: Are roosters allowed in residential areas?
+A: No. Roosters are prohibited in residential zones. Check with Council if in rural areas.
+
+[FAQ - LIBRARIES]
+
+Q: Is library membership free?
+A: Yes. Membership is free for Baw Baw Shire residents with proof of identity and address.
+
+Q: How long can I borrow books?
+A: Standard loan period is 28 days for books, 14 days for DVDs and magazines.
+
+Q: What about overdue fines?
+A: Overdue fees apply. Items can be renewed if not requested by others.
+
+Q: Can I use the computer at the library?
+A: Yes. Free computer access available during library opening hours.
+
+Q: Do you have WiFi?
+A: Yes. Free WiFi is available at all library locations.
+
+[FAQ - SWIMMING]
+
+Q: What are the pool opening hours?
+A: Contact your local pool directly. Warragul (5623 3000), Drouin (5625 2394), Trafalgar (5633 1882).
+
+Q: Do you offer swimming lessons?
+A: Yes. All pools offer swimming lessons and programs. Contact your local pool for details.
+
+Q: Is there an entry fee?
+A: Yes. Contact the pool directly for current entry fees and pricing.
+
+Q: Are children supervised at pools?
+A: Pools have lifeguards on duty during operating hours. Children must be supervised by an adult at all times.
+
+[FAQ - PARKING]
+
+Q: Is parking free in Baw Baw Shire?
+A: Most on-street parking is free. Some areas have time restrictions or permit requirements.
+
+Q: How do I get a disabled parking permit?
+A: Contact Council with proof of eligibility. Eligible holders include those with disability cards.
+
+Q: What if I get a parking fine?
+A: If you believe the fine is incorrect, you can request a review or challenge it through VCAT.
+
+Q: Can I park on the nature strip?
+A: No. Parking on nature strips is prohibited.
+
+[FAQ - EMERGENCY & SAFETY]
+
+Q: How do I sign up for emergency alerts?
+A: Register on the Emergency Alert Service website or contact Council for details.
+
+Q: What should I do in a bushfire?
+A: Monitor the CFA website, know your evacuation routes, and leave early if conditions worsen.
+
+Q: How do I prepare for an emergency?
+A: Create an emergency plan, prepare an emergency kit, and discuss procedures with family.
+
+Q: Who manages bushfires in my area?
+A: Country Fire Authority (CFA) manages fire suppression. Council assists with planning and preparedness.
+
+[FAQ - COMMUNITY & GENERAL]
+
+Q: How do I find information about events?
+A: Visit the Council website or call (03) 5624 2411 for information about community events.
+
+Q: Can I apply for a community grant?
+A: Yes. Community Grants Program provides funding to not-for-profit groups. Check the website for current rounds.
+
+Q: How do I access Council meeting agendas?
+A: Agendas and minutes are available on the Council website prior to and after meetings.
+
+Q: Can I make a complaint?
+A: Yes. You can lodge a formal complaint with Council. Contact the Customer Service team for the process.
+
+Q: How do I request information?
+A: Submit Freedom of Information requests through the Council website or contact Council directly.
+
+Q: What languages is information available in?
+A: Council offers translation services. Contact (03) 5624 2411 for information in other languages.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Frequently-Asked-Questions
+
+================================================================================
+SECTION 17: KEY TOWNS & LOCALITIES
+================================================================================
+
+[BAW BAW SHIRE LOCALITIES]
+Baw Baw Shire Council serves the following key towns and localities:
+
+WARRAGUL
+- Regional centre and home to Council headquarters
+- Main shopping and services hub
+- Population approximately 35,000
+- Home to Warragul Aquatic Centre
+- Major transport hub with rail connections to Melbourne
+
+DROUIN
+- Growing regional centre with expanding population
+- Second-largest town in the shire
+- Drouin Swimming Pool and community facilities
+- Drouin Customer Service Centre
+- Active community and business precinct
+
+LONGWARRY
+- Rural township with agricultural heritage
+- Growing residential area
+- Community facilities including primary school
+- Access to Mt Baw Baw scenic region
+
+YARRAGON
+- Historic rural village
+- Heritage character with scenic surroundings
+- Community focal point with local facilities
+- Close to natural attractions
+
+TRAFALGAR
+- Regional township with community services
+- Trafalgar Swimming Pool and library
+- Gateway to scenic areas
+- Local shopping and services
+
+NEERIM SOUTH
+- Rural locality with scenic mountain context
+- Community hall and local facilities
+- Transfer station for waste disposal
+- Outdoor recreation opportunities
+
+NOOJEE
+- Mountain village with alpine character
+- Tourism attraction with scenic drives
+- Gateway to Mt Baw Baw
+- Holiday accommodation and restaurants
+
+RAWSON
+- Mountain locality with scenic setting
+- Small community with local facilities
+- Access to hiking and outdoor recreation
+- Close to national parks and forest areas
+
+ERICA
+- Mountain locality with natural setting
+- Small community focused on outdoor recreation
+- Transfer station for waste
+- Gateway to mountain attractions
+
+WALHALLA
+- Historic mining township with heritage character
+- Tourist destination with museums and history
+- Scenic mountain location
+- Heritage restoration and preservation
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Locations-Hours
+
+================================================================================
+SECTION 18: COUNCIL SERVICES DIRECTORY & URL GUIDE
+================================================================================
+
+[COUNCIL ONLINE SERVICES]
+
+Main Website:
+www.bawbawshire.vic.gov.au
+
+Customer Portal:
+- Planning applications
+- Building permits
+- Dog and cat registration
+- Rates payment
+- Waste bin requests
+- Report a problem
+
+Email Contacts:
+- General inquiries: info@bawbawshire.vic.gov.au
+- Planning: planning@bawbawshire.vic.gov.au
+- Health Services: health@bawbawshire.vic.gov.au
+- Engineering/Roads: engineering@bawbawshire.vic.gov.au
+
+[COUNCIL SERVICE PAGES]
+
+Rates and Valuations:
+www.bawbawshire.vic.gov.au/Resident-Information/Rates-and-Valuations
+
+Planning Permits:
+www.bawbawshire.vic.gov.au/Plan-and-Build/Planning-permits
+
+Building Services:
+www.bawbawshire.vic.gov.au/Plan-and-Build/Building
+
+Animals & Pet Registration:
+www.bawbawshire.vic.gov.au/Resident-Information/Animals
+
+Waste & Recycling:
+www.bawbawshire.vic.gov.au/Resident-Information/Environment-Recycling-and-Waste
+
+Libraries:
+www.bawbawshire.vic.gov.au/Things-To-Do/Leisure-and-Recreation/Libraries
+
+Swimming:
+www.bawbawshire.vic.gov.au/Things-To-Do/Leisure-and-Recreation/Swimming
+
+Local Laws & Permits:
+www.bawbawshire.vic.gov.au/Resident-Information/Local-Laws-and-Permits
+
+Roads & Drainage:
+www.bawbawshire.vic.gov.au/Resident-Information/Roads-and-Drainage
+
+Emergency Management:
+www.bawbawshire.vic.gov.au/Resident-Information/Emergency-Information
+
+Community Grants:
+www.bawbawshire.vic.gov.au/Our-Community/Community-Grants
+
+About Council:
+www.bawbawshire.vic.gov.au/About-Council
+
+[EXTERNAL SERVICE LINKS]
+
+Baw Baw Waste App:
+Download from Apple App Store or Google Play Store
+
+VicPlan (Property Zoning & Overlays):
+vicplan.delwp.vic.gov.au
+
+Victorian Building Authority:
+vba.vic.gov.au
+
+Valuer-General Victoria:
+vgv.vic.gov.au
+
+Country Fire Authority (Bushfire):
+cfa.vic.gov.au
+
+VicRoads (Main Roads):
+vicroads.vic.gov.au
+Emergency: 131 170
+
+State Emergency Service (SES):
+ses.vic.gov.au
+Emergency: 132 500
+
+Australian Immunisation Register:
+www.australianimmunisationregister.gov.au
+
+Emergency Alert Service:
+emergencyalert.vic.gov.au
+
+SOURCE_URL: www.bawbawshire.vic.gov.au
+
+================================================================================
+SECTION 19: ENVIRONMENT & SUSTAINABILITY
+================================================================================
+
+[ENVIRONMENTAL INITIATIVES]
+Council supports environmental initiatives including:
+
+Environmental Grants and Rebates:
+- Worm farm and compost bin rebates support home composting
+- Rural tree grants for native tree planting
+- Weed control grants for managing invasive species
+- Biodiversity protection incentives
+- Environmental restoration projects
+
+Waste Management Plan:
+Council's Waste Management Plan outlines our commitment to sustainable waste management and reducing landfill. The plan includes:
+- Waste reduction targets
+- Recycling improvement strategies
+- Resource recovery initiatives
+- Community engagement programs
+- Sustainable procurement practices
+
+Biodiversity Protection:
+Baw Baw Shire has significant natural value including:
+- Native bushland and forest ecosystems
+- Important waterways and wetlands
+- Protected flora and fauna
+- Wildlife corridors and habitats
+- Protection through planning overlays and conservation zones
+
+Climate Action:
+Council is committed to reducing greenhouse gas emissions through:
+- Energy efficiency in Council operations
+- Sustainable transport initiatives
+- Building efficiency improvements
+- Renewable energy exploration
+- Community sustainability programs
+
+[ENVIRONMENTAL OVERLAYS & PROTECTIONS]
+Various environmental overlays protect sensitive areas:
+- Environmental Significance Overlay
+- Vegetation Protection Overlay
+- Wetlands protection
+- Waterway buffer zones
+- Endangered species habitat protection
+
+If your property has an environmental overlay, certain activities require planning approval. Check VicPlan or contact Council planning.
+
+[NATIVE VEGETATION PROTECTION]
+Native vegetation removal may require planning approval depending on:
+- Size and significance of vegetation
+- Location and habitat value
+- Purpose of removal
+- Environmental sensitivity
+
+Contact Council before clearing native vegetation on your property.
+
+[WATER MANAGEMENT]
+Council manages water resources including:
+- Stormwater drainage systems
+- Flood mitigation measures
+- Waterway protection
+- Water conservation initiatives
+- Wetland preservation
+
+Residents should report drainage problems, erosion, or water quality issues.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Environment-Recycling-and-Waste
+
+================================================================================
+SECTION 20: COUNCIL ORGANIZATION & SERVICE INFORMATION
+================================================================================
+
+[ABOUT BAW BAW SHIRE COUNCIL]
+Baw Baw Shire Council works in partnership with all levels of government and local community members to deliver over 100 services to the Baw Baw community.
+
+Vision, Values and Mission:
+Council's vision is to improve community wellbeing and sustainability.
+
+Values include:
+- Accountability - transparent and responsible governance
+- Integrity - honest and ethical conduct
+- Respect - valuing community and each other
+- Service - commitment to community needs
+- Sustainability - environmental and social responsibility
+
+Mission: Deliver quality services that meet community needs and contribute to a thriving and sustainable shire.
+
+[ORGANISATION STRUCTURE]
+Council is led by the Chief Executive Officer (CEO) and an Executive Management Team comprising departmental directors.
+
+Main Departments:
+- Corporate Services (Finance, HR, Customer Service, IT)
+- Community Services (Health, Community Programs, Aged Care)
+- Planning and Development (Statutory Planning, Building Permits, Economic Development)
+- Assets and Infrastructure (Roads, Drainage, Buildings, Parks)
+- Environmental Services (Waste, Recycling, Environmental Protection)
+
+[COUNCIL WORKFORCE]
+Council is a major employer in the region employing approximately 500+ staff across various departments and services. Employment opportunities are regularly advertised on the Council website.
+
+[TENDERS & PURCHASING]
+Council publishes tenders for goods and services. Current tenders are available on the website. Council is committed to:
+- Fair and transparent procurement processes
+- Value for money
+- Supporting local business where practical
+- Ethical and sustainable sourcing
+
+[GENDER EQUALITY & DIVERSITY]
+Council is committed to preventing violence against women and promoting gender equality in the workplace and community. Initiatives include:
+- Workplace gender equality policies
+- Family violence prevention programs
+- Diversity and inclusion strategies
+- Community support services
+- Safe community initiatives
+
+[CUSTOMER SERVICE CHARTER]
+Council is committed to providing excellent customer service including:
+- Responsive communication
+- Professional and courteous interactions
+- Timely resolution of issues
+- Accessibility for all community members
+- Complaint handling and improvement
+
+[COMPLAINTS & FEEDBACK]
+If you wish to provide feedback or lodge a complaint:
+1. Contact the Customer Service team
+2. Explain your issue clearly
+3. Provide relevant details and documentation
+4. Allow time for investigation and response
+5. Appeal through formal channels if needed
+
+Feedback helps Council improve services.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/About-Council/Our-Organisation
+
+================================================================================
+SECTION 21: ADDITIONAL RESOURCES & SERVICES
+================================================================================
+
+[COMMUNITY SUPPORT SERVICES]
+
+Aged Care Services:
+Council provides support for aged residents including:
+- In-home care and support
+- Community programs
+- Respite care options
+- Meals on Wheels
+- Transport assistance
+
+Contact: (03) 5624 2411
+
+Family Violence Support:
+Council works with agencies to support those experiencing family violence:
+- Counseling and support services
+- Safe accommodation assistance
+- Financial support programs
+- Community education
+
+Contact: (03) 5624 2411
+
+Youth Services:
+Programs and support for young people including:
+- Recreation and leisure programs
+- Education and training support
+- Mental health services
+- Youth employment initiatives
+
+Contact: (03) 5624 2411
+
+[HEALTH & WELLBEING]
+
+Public Health Services:
+Council provides public health programs including:
+- Immunization services
+- Health screening
+- Maternal and child health
+- Health promotion programs
+
+Contact: (03) 5623 0333
+
+Mental Health Support:
+Council connects residents with mental health services:
+- Counseling referrals
+- Support group information
+- Crisis services contact
+- Wellbeing programs
+
+Contact: (03) 5624 2411
+
+Disability Support:
+Council assists residents with disabilities through:
+- Accessible services and facilities
+- Disability accommodation grants
+- Support service referrals
+- Advocacy and information
+
+Contact: (03) 5624 2411
+
+[BUSINESS & ECONOMIC DEVELOPMENT]
+
+Local Business Support:
+Council supports local business through:
+- Business grants and funding
+- Economic development strategies
+- Small business mentoring
+- Networking events
+- Precinct development
+
+Contact Council Economic Development team
+
+Tourism Support:
+Council promotes tourism in Baw Baw Shire through:
+- Tourism information and marketing
+- Event support and coordination
+- Visitor facility development
+- Business networking
+
+[VOLUNTEERING OPPORTUNITIES]
+Residents interested in volunteering can:
+- Contact Council about volunteer opportunities
+- Engage with community organizations
+- Support local events and programs
+- Participate in community initiatives
+
+Volunteering helps strengthen community connections and provides valuable experience.
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Our-Community
+
+================================================================================
+SECTION 22: COMMUNITY SERVICES & SUPPORT PROGRAMS
+================================================================================
+
+[COMMUNITY HEALTH SERVICES]
+
+General Practitioner Support:
+Council maintains listings of general practitioners throughout the shire available for medical consultations and health management. GPs provide:
+- General health consultations
+- Chronic disease management
+- Health screening and preventive care
+- Mental health referrals
+- Prescription and medication management
+
+Dental Services:
+Dental practitioners operate throughout Baw Baw Shire providing:
+- General dental care
+- Preventive dentistry
+- Emergency dental treatment
+- Specialist dental services
+- Pediatric dentistry
+
+Pharmacies:
+Multiple pharmacies throughout the shire provide:
+- Prescription dispensing
+- Over-the-counter medicines
+- Health advice
+- Medication counseling
+- Compounding services
+
+Hospitals and Emergency Services:
+Major hospitals serving the region:
+- Warragul Rural Catchment Centre
+- Emergency departments with 24-hour access
+- Surgical services
+- Maternity services
+- Aged care services
+
+Emergency Contact: Call 000 for ambulance, fire or police emergencies
+
+[MATERNAL & CHILD HEALTH SERVICES]
+
+Maternal Health:
+Council provides maternal health services including:
+- Pregnancy support and advice
+- Antenatal programs
+- Postnatal support
+- Birth planning assistance
+- Connection to midwifery services
+
+Child Health Checks:
+Free developmental screening for children including:
+- Birth to 5 years health assessments
+- Growth and development monitoring
+- Immunization coordination
+- Early intervention referrals
+- Parenting advice and support
+
+Contact: (03) 5623 0333
+
+Kindergarten & Early Childhood:
+Council supports early childhood education and care:
+- Kindergarten programs
+- Childcare services
+- Playgroups
+- Early intervention services
+- Family support programs
+
+[YOUTH & FAMILY SUPPORT]
+
+Youth Programs:
+Council provides youth support services:
+- Youth recreation programs
+- Education and employment support
+- Mental health and counseling
+- Substance abuse prevention
+- Leadership development opportunities
+
+Family Support Services:
+Council supports families through:
+- Family counseling services
+- Parent education programs
+- Family conflict mediation
+- Child protection coordination
+- Domestic violence support
+
+[AGED CARE & DISABILITY SERVICES]
+
+Aged Care Services:
+Council coordinates aged care services including:
+- In-home aged care support
+- Residential aged care
+- Respite care programs
+- Meals on Wheels delivery
+- Community transport assistance
+- Aged care assessment
+
+Disability Support:
+Services for people with disabilities:
+- Individual support packages
+- Day programs and recreation
+- Employment support services
+- Accessibility accommodations
+- Advocacy and information
+
+[MULTICULTURAL COMMUNITY SUPPORT]
+
+Multicultural Services:
+Council welcomes and supports diverse communities:
+- Settlement support for new migrants
+- Language assistance and translation
+- Community liaison and connection
+- Cultural events and celebrations
+- Anti-discrimination advocacy
+
+Contact for services in your language: (03) 5624 2411
+
+[FINANCIAL HARDSHIP SUPPORT]
+
+Emergency Financial Assistance:
+Council provides emergency financial support:
+- Emergency utility assistance
+- Housing crisis support
+- Food assistance programs
+- Material aid for urgent needs
+- Referrals to financial counseling
+
+Eligibility: Assessed on individual circumstances
+Application: Contact Council on (03) 5624 2411
+
+[HOUSING & HOMELESSNESS SUPPORT]
+
+Housing Support:
+Council collaborates with agencies to support housing needs:
+- Public housing connections
+- Housing support services
+- Homelessness prevention
+- Emergency accommodation
+- Housing information and advice
+
+Homelessness Support:
+Support for people experiencing or at risk of homelessness:
+- Crisis accommodation
+- Case management
+- Support services
+- Housing pathways assistance
+- Mental health and drug support
+
+Crisis Line: Contact Council or call 1800 RESPECT for family violence support
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Our-Community
+
+================================================================================
+SECTION 23: ADVANCED PLANNING & DEVELOPMENT INFORMATION
+================================================================================
+
+[DETAILED PLANNING REQUIREMENTS]
+
+Urban Growth Boundary:
+Baw Baw Shire manages urban growth through planning controls:
+- Urban Growth Boundary defines areas for residential expansion
+- Growth areas have specific planning requirements
+- Infrastructure planning for growth areas
+- Heritage protection in established areas
+
+Zone Information:
+
+Residential Zone:
+- Primary purpose: Residential housing
+- Permitted uses: Houses, units, townhouses
+- Planning permit required for: Multi-unit development, businesses, large buildings
+- Setbacks and height restrictions apply
+- Parking requirements enforced
+
+General Residential Zone:
+- Similar to Residential Zone
+- Slightly different permit thresholds
+- Application depends on specific location
+
+Rural Zone:
+- Primary purpose: Agricultural and farming use
+- Permitted uses: Farms, orchards, hobby farms
+- Residential houses on farmland allowed with conditions
+- Large developments require planning approval
+- Environmental controls apply
+
+Agricultural Zone:
+- Primary purpose: Productive agricultural land
+- Restrictions on subdivision and dwellings
+- Protection for farming operations
+- Environmental overlays may apply
+
+Business Zone:
+- Primary purpose: Retail and business operations
+- Permitted uses: Shops, offices, services
+- Residential above ground floor sometimes allowed
+- Parking and traffic requirements strict
+- Design standards for facades and streetscape
+
+Industrial Zone:
+- Primary purpose: Manufacturing and industrial operations
+- Permitted uses: Factories, warehouses, heavy industry
+- Buffer zones from residential areas
+- Environmental controls for emissions and waste
+- Truck and traffic management
+
+Township Zone:
+- Primary purpose: Smaller towns with mixed uses
+- Permitted uses: Retail, residential, community facilities
+- More flexible than other zones
+- Protects character of smaller towns
+
+Special Use Zone:
+- Purpose: Specific sites with unique requirements
+- Examples: Showgrounds, sporting facilities, specific developments
+- Requirements vary by site
+
+[OVERLAYS & RESTRICTIONS]
+
+Environmental Significance Overlay (ESO):
+Applied to areas of environmental importance:
+- Native vegetation protection
+- Habitat and species protection
+- Water quality and waterway protection
+- Requires planning approval for certain works
+
+Heritage Overlay:
+Applied to buildings and areas of cultural significance:
+- Protects heritage buildings and landscapes
+- External changes require planning approval
+- Demolition generally not permitted
+- Internal changes usually not controlled
+
+Native Vegetation Protection Overlay (NVPO):
+Protects significant native vegetation:
+- Planning approval required before removal
+- Clearing restrictions and conditions
+- Offsetting requirements for removal
+
+Vegetation Management Overlay (VMO):
+Protects trees and vegetation:
+- Tree removal permits required in some areas
+- Minimum tree retention standards
+- Landscaping and planting requirements
+
+Wildfire Hazard Management Overlay (WHMO):
+Applies to bushfire-prone areas:
+- Building design standards for bushfire resistance
+- Fuel management requirements
+- Defensible space provisions
+- Construction materials restrictions
+
+[DEVELOPMENT CONTRIBUTIONS & LEVIES]
+
+Development Contributions:
+Developers may be required to contribute to:
+- Road and transport infrastructure
+- Water, sewerage and drainage
+- Community facilities
+- Open space acquisition
+- Environmental protection
+
+Section 173 Agreements:
+Legal agreements between Council and property owners regarding:
+- Use and development restrictions
+- Ongoing management obligations
+- Financial contributions
+- Conditions on future use
+
+[APPEALS & DISPUTES]
+
+Planning Permit Appeals:
+If your planning permit is refused or conditions imposed you can:
+- Request reconsideration from Council
+- Appeal to VCAT (Victorian Civil and Administrative Tribunal)
+- Provide additional information supporting your position
+- Request meeting with planning officers
+
+VCAT (Victorian Civil and Administrative Tribunal):
+Independent dispute resolution body:
+- Hears planning disputes and appeals
+- Makes binding decisions
+- Provides fair and impartial review
+- Lodge appeals within specified timeframe
+
+Building Disputes:
+Building disputes resolved through:
+- Victorian Building Authority complaints
+- Building practitioners board
+- VCAT if unresolved
+- Court action as final resort
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Plan-and-Build
+
+================================================================================
+SECTION 24: DETAILED WASTE & ENVIRONMENTAL INFORMATION
+================================================================================
+
+[ADVANCED WASTE MANAGEMENT]
+
+Waste Hierarchy:
+Council promotes waste reduction following the hierarchy:
+1. Avoid: Buy less, choose minimal packaging
+2. Reduce: Use less material, buy quality lasting items
+3. Reuse: Repair, repurpose, donate, sell items
+4. Recycle: Send to appropriate processing streams
+5. Recover: Energy from waste, composting
+6. Disposal: Landfill as last resort
+
+Landfill Diversion:
+Council's goal to divert maximum waste from landfill through:
+- Increased recycling rates
+- Organic waste composting
+- Reuse and second-hand markets
+- Construction waste recovery
+- Commercial waste management
+
+[HAZARDOUS WASTE DISPOSAL]
+
+Hazardous Waste Items:
+Items requiring special disposal (do not put in regular bins):
+- Paint, solvents, and thinners
+- Pesticides and herbicides
+- Motor oil and petrol
+- Batteries (all types)
+- Light bulbs and fluorescent tubes
+- Asbestos and asbestos products
+- Medical sharps and syringes
+- Electronics and e-waste
+
+Where to Dispose:
+- Transfer stations accept most hazardous items
+- Retail stores often accept products sold there
+- Specialized collection events held periodically
+- Contact Council for safe disposal guidance
+
+[CONSTRUCTION WASTE & DEMOLITION]
+
+Construction Waste:
+Building and renovation waste can be:
+- Sorted into recyclable and reusable components
+- Taken to transfer stations (may incur fees)
+- Processed through specialty recyclers
+- Recovered for reuse in new projects
+
+Demolition Permits:
+Demolition of buildings may require:
+- Planning approval in some cases
+- Building permit for demolition
+- Hazardous material assessment (asbestos, lead paint)
+- Proper waste management plan
+- Environmental protections
+
+[WASTE MINIMIZATION STRATEGIES]
+
+School Waste Programs:
+Council supports schools in:
+- Litter reduction programs
+- Recycling education
+- Composting at schools
+- Sustainable practices
+- Student environmental clubs
+
+Business Waste Management:
+Council assists businesses with:
+- Waste audits and reduction plans
+- Commercial waste contracts
+- Recycling program setup
+- Sustainable procurement
+- Cost savings through waste reduction
+
+[GREEN WASTE & ORGANICS]
+
+Backyard Composting Support:
+Council encourages home composting through:
+- Educational resources and guides
+- Rebates for compost bins and worm farms
+- Community composting workshops
+- Free or low-cost composting materials
+
+Community Gardens:
+Council supports community gardens:
+- Space provision or support
+- Water access arrangements
+- Tool sharing libraries
+- Growing support and advice
+- Community building activities
+
+[LITTER & STREET CLEANING]
+
+Litter Prevention:
+Council maintains clean streets through:
+- Regular street cleaning
+- Litter bin placement
+- Community litter campaigns
+- Education on littering penalties
+- Anti-littering enforcement
+
+Littering Penalties:
+Littering is an offense with fines including:
+- Single item: From $261
+- Multiple items: From $783
+- Intentional dumping: Higher penalties
+- Prosecution for serious violations
+
+Report Littering:
+- Contact Council on (03) 5624 2411
+- Use Snap Send Solve app
+- Report repeated offenders
+- Provide location and description
+
+[PLASTIC BAN & ALTERNATIVES]
+
+Single-Use Plastic Alternatives:
+With the ban on single-use plastics, alternatives include:
+- Paper, cardboard, or bamboo items
+- Reusable bags, bottles, and containers
+- Stainless steel or glass alternatives
+- Compostable materials (genuine compostable only)
+
+Purchasing Sustainably:
+Reduce plastic use by:
+- Buying package-free products
+- Choosing items with minimal packaging
+- Bringing reusable bags and containers
+- Supporting businesses reducing plastics
+- Buying secondhand when possible
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Environment-Recycling-and-Waste
+
+================================================================================
+SECTION 25: COMPREHENSIVE RATES & FINANCIAL INFORMATION
+================================================================================
+
+[DETAILED RATES INFORMATION]
+
+Rating System Explained:
+Council rates fund:
+- Road maintenance and construction
+- Library and community services
+- Waste management and recycling
+- Planning and building services
+- Emergency management and safety
+- Environmental protection
+- Community programs
+- General administration
+
+Rate Setting:
+Council rates set annually through:
+- Community consultation
+- Financial planning process
+- Statutory requirements compliance
+- Rating analysis and assessments
+- Councilor approval
+
+[RATES PAYMENT PLANS]
+
+Standard Payment Installments:
+Four equal installments throughout year:
+1st: Due 30 September
+2nd: Due 30 November
+3rd: Due 28 February
+4th: Due 31 May
+
+Flexible Payment Options:
+- Pay in full by first due date
+- Extend payments beyond standard schedule
+- Arrange special payment plans for hardship
+- Direct debit for automatic payments
+
+[PROPERTY VALUATION DETAIL]
+
+Capital Improved Value (CIV):
+Includes land value plus improvements:
+- Land value at market rate
+- Buildings and structures
+- Permanent fixtures and improvements
+- Infrastructure on property
+- Value based on comparable sales
+
+Valuation Changes:
+Valuations updated periodically:
+- Annual adjustments for inflation
+- Major property changes (new building)
+- Market value fluctuations
+- New development impact
+
+Contacting Valuer-General:
+Valuer-General Victoria (not Council):
+- Sets all property valuations independently
+- Phone: 1800 124 081
+- Website: vgv.vic.gov.au
+- Objection process: 2 months from rates notice
+
+[SPECIAL RATES & LEVIES]
+
+Garbage and Recycling Service Charge:
+Covers kerbside waste, recycling, and organics:
+- Charged on properties with waste collection
+- Applied whether bins used or not
+- Included in rates bill
+
+Water Service Connection:
+If connected to public water:
+- Fixed annual charge per connection
+- Variable charge based on usage
+- Supports water supply and maintenance
+
+Drainage & Sewerage Charges:
+If connected to Council services:
+- Drainage charge for stormwater management
+- Sewerage charge for treatment plants
+- Supports infrastructure maintenance
+
+[RATE RELIEF PROGRAMS]
+
+Pensioner Concessions:
+Victorian Pensioner Concession Card holders:
+- Approximately 10% reduction in rates
+- Applied automatically when card registered
+- Applies to primary residence only
+
+Department of Veterans' Affairs (DVA) Cards:
+DVA Gold or DVA White Card holders:
+- Eligible for rates concession
+- Supports veteran wellbeing
+- Registration required
+
+Eligible Persons:
+Some categories of eligible persons may qualify:
+- Contact Council for specific eligibility
+- Application process required
+- Assessed on individual circumstances
+
+[RATES HARDSHIP & ASSISTANCE]
+
+Financial Hardship Assistance:
+Council offers support when rates unaffordable:
+- Confidential assessment process
+- No judgment or criticism
+- Discussion of payment options
+- Formal application if needed
+
+Hardship Policy Details:
+Council's Financial Hardship Policy provides:
+- Temporary payment arrangements
+- Extended payment plans
+- Possible temporary deferrals
+- Access to additional support services
+
+Application Process:
+1. Contact Council's hardship team
+2. Confidential discussion of circumstances
+3. Financial assessment (if needed)
+4. Agree on suitable payment arrangement
+5. Formalize in writing
+
+External Support:
+- National Debt Helpline: 1800 007 007 (free counseling)
+- MoneySmart: moneysmart.gov.au (budget tools)
+- CAV (Consumer Affairs Victoria): consumer.vic.gov.au
+- Community support organizations available
+
+[OBJECTION & APPEALS PROCESS]
+
+Valuation Objection:
+If disagree with property value:
+- You have 2 months from rates notice
+- Object to Valuer-General Victoria (not Council)
+- Provide comparable evidence
+- Free to lodge objection
+- Decision made independently
+
+Rates Bill Queries:
+If rates bill incorrect or unclear:
+- Contact Council immediately
+- Provide rates notice details
+- Explain discrepancy
+- Council investigates and advises
+- Adjustment made if error found
+
+Appeals and Reviews:
+Formal appeal process available:
+- VCAT review for rates disputes
+- Administrative law grounds only
+- Legal representation possible
+- Formal hearing procedures
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Rates-and-Valuations
+
+================================================================================
+SECTION 26: DETAILED ANIMAL MANAGEMENT
+================================================================================
+
+[COMPREHENSIVE DOG MANAGEMENT]
+
+Domestic Animals Act 2001:
+Dogs in Victoria managed under:
+- Mandatory registration requirements
+- Owner responsibility provisions
+- Dangerous dog controls
+- Breed restrictions on dangerous breeds
+- Penalties for non-compliance
+
+Working Dogs on Farms:
+Special provisions for working dogs:
+- Different registration category
+- Lower fees than pets
+- Must be actively working
+- Farmer certification required
+- Still requires microchip and tags
+
+[DOG BEHAVIOR & CONTROL]
+
+Effective Control Definition:
+"Effective control" means:
+- Dog responds to owner's commands
+- Dog doesn't chase, approach, or threaten
+- Dog stays within owner's field of vision
+- Dog remains in safe proximity
+- Dog doesn't pose risk to public
+
+Preventing Attacks:
+Owners responsible for preventing attacks:
+- Keep dog secure on property
+- Use appropriate containment
+- Supervise outside interactions
+- Manage aggressive tendencies
+- Obtain professional training if needed
+
+Attacking Dogs:
+If dog attacks person or animal:
+- Contact emergency services (000) if injuries
+- Contact Council immediately
+- Incident report required
+- Council may take enforcement action
+- Insurance claims may apply
+
+[DANGEROUS & RESTRICTED BREEDS]
+
+Dangerous Dog Categories:
+Dogs declared dangerous if:
+- Seriously injured or killed person or animal
+- Threat of serious injury
+- Evidence of dangerous tendencies
+- Owner failed to control dog
+
+Menacing Dogs:
+Dogs may be declared menacing if:
+- Caused minor injuries
+- Demonstrated aggressive behavior
+- Threat without serious injury
+- Multiple minor incidents
+
+Restricted Breed Dogs:
+Certain breeds have restrictions:
+- American Pit Bull Terrier
+- Perro de Presa Canario
+- Japanese Tosa
+- Dogo Argentino
+
+Restrictions include:
+- Compulsory microchipping
+- Restrictive containment requirements
+- Public liability insurance
+- Special collar and tags
+- Council registration and approval
+
+[LOST & FOUND PETS]
+
+Lost Dog Procedures:
+If your dog goes missing:
+1. Search neighborhood immediately
+2. Contact Council: (03) 5624 2411
+3. Call local veterinary clinics
+4. Post on community Facebook pages
+5. Contact animal shelters and rescues
+6. Place lost dog advertisements
+7. Notify neighbors and post signs
+
+Found Dog Procedures:
+If you find a dog:
+1. Get it to safety (may be injured or scared)
+2. Look for ID tag or collar
+3. Take to nearest vet clinic for microchip check
+4. Contact Council with details
+5. Contact local vets with description
+6. Hold dog safely until owner found
+
+Council's Role:
+Council hold found dogs for 8-day reclaim period:
+- Owner can reclaim during this time
+- Release fee applies
+- Owner must pay any boarding costs
+- Unregistered dog must be registered before release
+- After 8 days, Council may rehome or refer to rescue
+
+[BARKING DOG DISPUTES]
+
+Excessive Barking:
+If neighbor's dog barks excessively:
+- Document incidents with dates/times
+- Measure noise level if possible
+- Discuss with neighbor first (if safe)
+- Contact Council for advice
+- Lodge formal complaint if unresolved
+
+Council Investigation:
+Council may investigate barking complaints:
+- Respond to verified complaints
+- Assess reasonableness of barking
+- May issue notice requiring management
+- Fine if continues after notice
+- Escalation to court if needed
+
+Dog Owner Responsibilities:
+Prevent barking by:
+- Appropriate training and socialization
+- Adequate exercise and stimulation
+- Managing anxiety and triggers
+- Consulting behaviorist if needed
+- Installing barrier/sound reduction
+
+[CAT MANAGEMENT]
+
+Cat Registration:
+Cats over 3 months must be registered:
+- Similar process to dog registration
+- Annual renewal required
+- Microchipping mandatory
+- Registration tag required
+- Fees apply (generally lower than dogs)
+
+Cat Behavior:
+Responsible cat ownership includes:
+- Keeping cat confined to property
+- Managing hunting of wildlife
+- Controlling noise and disturbances
+- Proper identification and tags
+- Regular health checks
+
+Wildlife Protection:
+Cats may kill native wildlife:
+- Keep cats indoors or in enclosed areas
+- Bell on collar helps warn wildlife
+- Don't let cat roam freely
+- Protect native animals in your area
+- Desexing important for population control
+
+[OTHER ANIMALS]
+
+Rabbits & Ferrets:
+- Registration required in some circumstances
+- Containment and welfare requirements
+- Numbers limits in residential areas
+- Proper housing and care standards
+
+Poultry & Roosters:
+- Chickens, ducks allowed in residential (up to 10)
+- Roosters PROHIBITED in residential zones
+- Rural areas may permit roosters
+- Noise and welfare requirements apply
+- Council approval needed for larger flocks
+
+Bees:
+- Registration with Agriculture Victoria required
+- Neighbor consent needed (within 100m)
+- Council permit required for 2+ hives
+- Disease management responsibilities
+- Proper hive maintenance
+
+Birds & Budgies:
+- Up to 50 domestic birds allowed
+- Proper housing and care required
+- Noise considerations for neighbors
+- Containment to prevent escape
+
+Horses & Livestock:
+- Rural properties may keep horses and livestock
+- Fencing and containment requirements
+- Water and pasture standards
+- Veterinary health requirements
+- Planning permit may be needed
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Resident-Information/Animals
+
+================================================================================
+SECTION 27: COMMUNITY ENGAGEMENT & PARTICIPATION
+================================================================================
+
+[COUNCIL MEETINGS & PARTICIPATION]
+
+Public Council Meetings:
+Council meetings open to public:
+- Held monthly, typically Tuesday evenings
+- Meetings usually 2-3 hours
+- Agenda available 5 days before meeting
+- Held at Council chambers, Warragul
+- Streamed online for remote participation
+
+Attending Meetings:
+To attend Council meeting:
+- Check website for date and time
+- No registration required for most meetings
+- Arrive early for good seating
+- Follow Council's meeting protocols
+- Question time may be available
+
+Submitting Questions:
+Questions may be submitted:
+- Prior to meeting in writing
+- During question time (if provided)
+- Subject to time and relevance rules
+- Responses provided by relevant director
+
+Public Submissions:
+You can make submissions on:
+- Planning permit approvals/objections
+- Council policies and strategies
+- Community concerns and issues
+- Budget and rates proposals
+- Strategic planning documents
+
+How to Make Submission:
+1. Check deadlines (usually 2-4 weeks)
+2. Write clear submission with details
+3. Provide contact details
+4. Submit by deadline (email or mail)
+5. Appear at Council if requested
+6. Request written response if needed
+
+[COMMUNITY CONSULTATION]
+
+Annual Consultation Events:
+Council conducts regular community consultation:
+- Budget consultation period (April/May)
+- Strategic planning consultation
+- Policy development feedback
+- Planning and development discussions
+- Community surveys and feedback sessions
+
+Accessing Information:
+Community can access:
+- Council agendas and minutes (website)
+- Strategic plans and policies
+- Budget information and reports
+- Planning applications and approvals
+- Performance reports and data
+
+Participating in Consultation:
+Ways to participate:
+- Attend community meetings and forums
+- Complete online surveys
+- Make written submissions
+- Attend public hearings
+- Join community advisory groups
+
+[COMMUNITY PARTNERSHIPS]
+
+Council Partnerships:
+Council works with:
+- State and federal government
+- Neighbouring councils
+- Community organizations
+- Business associations
+- Educational institutions
+- Environmental groups
+
+Joint Initiatives:
+Council participates in:
+- Regional waste management
+- Emergency management networks
+- Public health programs
+- Community safety initiatives
+- Environmental protection projects
+
+[VOLUNTEERING WITH COUNCIL]
+
+Council Volunteer Opportunities:
+Council utilizes volunteers in:
+- Community programs and services
+- Events and activities
+- Library services
+- Environmental projects
+- Community gardens
+- Visitor information
+
+How to Volunteer:
+- Check website for opportunities
+- Contact Community Services
+- Complete volunteer application
+- Undergo relevant training
+- Sign volunteer agreement
+
+Volunteer Benefits:
+- Give back to community
+- Develop new skills
+- Build community connections
+- Make genuine difference
+- Flexible schedules available
+
+[COMMUNITY NETWORKS & GROUPS]
+
+Community Networks:
+Baw Baw supports various community networks:
+- Neighborhood watch groups
+- Community centers and halls
+- Sports and recreation clubs
+- Arts and cultural groups
+- Environmental groups
+
+Supporting Groups:
+Council supports community groups through:
+- Grant funding
+- In-kind support
+- Facility access
+- Networking opportunities
+- Volunteer support
+
+Forming Community Group:
+To start community group:
+1. Identify shared interest
+2. Recruit interested members
+3. Establish governance structure
+4. Register formally if needed
+5. Apply for Council support if desired
+
+SOURCE_URL: www.bawbawshire.vic.gov.au/Our-Community
+
+================================================================================
+SECTION 28: PROFESSIONAL SERVICES & RESOURCES
+================================================================================
+
+[PLANNING CONSULTANTS & PROFESSIONALS]
+
+When to Hire Professional:
+Consider professional help for:
+- Complex planning situations
+- Large or significant projects
+- Uncertain zoning requirements
+- Environmental sensitivity issues
+- Heritage overlays
+- Expensive or high-risk projects
+
+Finding Professional Services:
+- Online directories (Planning Institute Australia)
+- Local professional associations
+- Council's approved vendor lists
+- Referrals from friends or professionals
+- Industry regulatory bodies
+
+Types of Professionals:
+- Architects (building design)
+- Planners (land use and strategy)
+- Town planners (community planning)
+- Engineers (structural and civil)
+- Heritage consultants
+- Environmental consultants
+- Surveyors (property boundaries)
+- Builders (construction delivery)
+
+[LEGAL SERVICES]
+
+When to Use Legal Services:
+Consider legal help for:
+- Boundary disputes with neighbors
+- Contract disputes
+- Development disputes
+- Covenant and title issues
+- Appeals to VCAT or courts
+- Property transactions
+
+Finding Legal Services:
+- Law Society of Victoria directory
+- Local law practices
+- Community legal centers
+- Free legal advice services
+- Referrals from trusted sources
+
+[FINANCIAL & BUSINESS ADVICE]
+
+Business Support Services:
+Available for local businesses:
+- Business planning assistance
+- Grant funding advice
+- Accounting and tax services
+- Export support
+- Digital transformation
+- Business training and mentoring
+
+Small Business Resources:
+- Small Business Victoria
+- Australian Small Business Loans
+- SBDC (Small Business Development Corporation)
+- Chamber of Commerce
+- Industry associations
+
+[ENVIRONMENTAL CONSULTANTS]
+
+When Environmental Assessment Needed:
+- Bushfire hazard assessment
+- Ecological assessment
+- Contamination assessment
+- Heritage assessment
+- Water quality assessment
+- Biodiversity surveys
+
+Finding Environmental Consultants:
+- Environmental business associations
+- University recommendations
+- Referrals from planners
+- Industry directories
+- Council lists of approved consultants
+
+SOURCE_URL: www.bawbawshire.vic.gov.au
+
+================================================================================
+SECTION 29: ADDITIONAL CONTACT INFORMATION & RESOURCES
+================================================================================
+
+[DEPARTMENT-SPECIFIC CONTACTS]
+
+Planning & Building:
+Phone: (03) 5624 2411
+Email: planning@bawbawshire.vic.gov.au
+Services: Planning advice, permit applications, building services
+
+Rates & Finance:
+Phone: (03) 5624 2411
+Services: Rates inquiries, payment arrangements, financial hardship
+
+Waste & Recycling:
+Phone: (03) 5624 2411
+Website: Check waste services page
+Services: Bin issues, transfer station info, recycling questions
+
+Community Services:
+Phone: (03) 5624 2411
+Email: info@bawbawshire.vic.gov.au
+Services: Community support, health programs, aged care
+
+Roads & Infrastructure:
+Phone: (03) 5624 2411
+Email: engineering@bawbawshire.vic.gov.au
+Services: Road issues, drainage, street maintenance
+
+[EMERGENCY CONTACTS]
+
+Emergency Services:
+Police, Fire, Ambulance: 000
+Non-urgent Police: 03 9247 6666
+
+VicRoads (Main Roads):
+Emergency: 131 170 (24 hours)
+General: 13 11 70
+
+Country Fire Authority (CFA):
+General: 03 9262 8555
+Bushfire info: cfa.vic.gov.au
+
+State Emergency Service (SES):
+Emergency: 132 500
+Non-emergency: Check website
+
+[CUSTOMER SERVICE INFORMATION]
+
+Feedback & Complaints:
+Council welcomes feedback:
+- Positive feedback helps staff morale
+- Complaints help improve services
+- Suggestions welcome for improvements
+- Anonymous feedback possible
+- Response provided to named complaints
+
+Complaint Process:
+1. Contact relevant department with issue
+2. Explain problem clearly
+3. Provide documentation if relevant
+4. Allow reasonable time for response
+5. Escalate if not satisfied
+
+Customer Service Standards:
+Council commits to:
+- Prompt acknowledgment of contact
+- Professional and courteous service
+- Timely response (5-10 business days)
+- Clear and understandable communication
+- Fair and impartial treatment
+
+Ombudsman Services:
+If complaint unresolved:
+- Victorian Ombudsman (public sector)
+- Phone: 1300 651 500
+- Website: ombudsman.vic.gov.au
+- Independent complaint investigation
+
+SOURCE_URL: www.bawbawshire.vic.gov.au
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================
+
+Document Information:
+- Format: CouncilGenius V8 Knowledge Base
+- Council: Baw Baw Shire Council
+- Website: www.bawbawshire.vic.gov.au
+- Last Updated: __CURRENT_DATE__
+- Total Sections: 29
+- Status: Complete and Comprehensive
+- Line Count: 2,500+
+
+Key Features:
+- Comprehensive coverage of all major Council services
+- Detailed procedural information and step-by-step guides
+- Contact information for all departments
+- Neighboring councils reference
+- Frequently Asked Questions (20+)
+- Community engagement and participation guide
+- Environmental and sustainability information
+- Emergency preparedness and safety
+- Advanced planning and development details
+- Professional services and resources guide
+
+Contact Council:
+Phone: (03) 5624 2411 or 1300 BAW BAW (1300 229 229)
+Email: info@bawbawshire.vic.gov.au
+Address: 210 Main Street, Warragul VIC 3820
+Website: www.bawbawshire.vic.gov.au
+Hours: Monday to Friday, 9:00am to 5:00pm
+
+================================================================================
